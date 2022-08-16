@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salat Bestellung</title>
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Favicons -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#f70505">
+    <link rel="shortcut icon" href="./img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#f70505">
+    <meta name="msapplication-config" content="./img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#f70505">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="input.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="logo">Welcome<span id="name"></span></h1>
+        <div class="menu">
+            <a href="https://www.haviconnect.com/login">HAVI Homepage</a>
+            <a type="button" onclick="feedbackGeben ()" href="#">Feedback</a>
+            <a href="#">Impressum</a>
+        </div>
+    </header>
+
+    <!-- Lieferung auswählen -->
+
+    <main class="second__page">
+        <section class="lieferung__auswählen">
+            <article class="wrapper__second__page">
+                <a href="klein-lieferung.html" type="button" class="button__klein__lieferung" value="Lieferung klein"
+                    onclick="berechnenLieferungKlein ()">Lieferung klein</a>
+                <a href="#" type="button" class="automatic__erfuellen" value="Automatic Erfüllen"
+                    onclick="berechnenAutomatic ()">Automatic erfüllen</a>
+                <a href="grosse-lieferung.html" type="button" class="button__gross__lieferung" value="Lieferung groß"
+                    onclick="berechnenLieferungKlein ()">Lieferung groß</a>
+            </article>
+        </section>
+    </main>
+    <main class="second__page">
+        <article class="img__lieferung">
+            <img src="./img/salat-bestellung.jpg" alt="">
+            <img src="./img/automatic-bestellen.webp" alt="">
+            <img src="./img/fleisch-bestellung.jpg" alt="">
+        </article>
+    </main>
+
+
+    <!-- Lieferung auswählen Mobile -->
+
+    <main class="second__page__mobile">
+        <section class="lieferung__auswählen__mobile">
+            <article class="wrapper__mobile">
+                <a href="klein-lieferung.html" type="button" class="button__klein__lieferung" value="Lieferung klein"
+                    onclick="berechnenLieferungKlein ()">Lieferung klein</a>
+                <div class="img__lieferung__mobile"><img src="./img/salat-bestellung.jpg" alt=""></div>
+                <a href="#" type="button" class="automatic__erfuellen" value="Automatic Erfüllen"
+                    onclick="berechnenAutomatic ()">Automatic erfüllen</a>
+                <div class="img__lieferung__mobile"><img src="./img/automatic-bestellen.webp" alt=""></div>
+                <a href="grosse-lieferung.html" type="button" class="button__gross__lieferung" value="Lieferung groß"
+                    onclick="berechnenLieferungKlein ()">Lieferung groß</a>
+                <div class="img__lieferung__mobile"><img class="img__lieferung__mobile"
+                        src="./img/fleisch-bestellung.jpg" alt=""></div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+
+    <article class="footer">
+        <div class="footer__final">
+            <p>Plamen Petrov<span>&#169; </span>2022. All right reserved</p>
+        </div>
+    </article>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferung klein</title>
+
+    <!-- Favicons -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#f70505">
+    <link rel="shortcut icon" href="./img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#f70505">
+    <meta name="msapplication-config" content="./img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#f70505">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="input.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <article class="header__lieferung">
+        <a href="lieferung.html " type="button" class="logo" value="#" onclick="weiterOderNein ()">vorherige Seite</a>
+    </article>
+
+    <h2 class="klein__lieferung">
+        Klein Lieferung:
+    </h2>
+
+    <!-- Bestellung -->
+
+    <section class="salat__bestellung">
+        <div class="produkt__frisch">
+            <div class="nummer__und__name">
+                <div class="wrin__nummer"><span class="produkt__text">Eier pasteurusiert - </span> #010660-448</div>
+                </div>
+                <div class="quantity__and__more">
+                    <p> Verbrauch : </p>
+                    <input type="number" class="input__number" placeholder="Monat" id="verbrauch__eier">
+                    <p> Datum : </p>
+                    <input type="number" class="input__number" id="verbrauch__eier__pro__tag">
+                    <p> Tage bis Lieferung : </p>
+                    <input type="number" class="input__number" id="tage__eier">
+                    <p> Du hast : </p>
+                    <input type="number" class="input__number" placeholder="Karton" id="lage__eier">
+                    <p> Du braust : </p>
+                    <input class="berechnen__button" type="button" value="berechnen" onclick="berechnenEier ()">
+                    <p>--></p>
+                    <input type="number" class="input__number" id="brauche__eier">
+                    <p>Kartons</p>
+                </div>
+            </div>
+            <div class="produkt__frisch">
+                <div class="wrin__nummer"><span class="produkt__text">Apfeltüte Bio - </span> #008549-064</div>
+                <div class="quantity__and__more">
+                    <p> Verbrauch : </p>
+                    <input type="number" class="input__number" id="verbrauch__apfel">
+                    <p> Datum : </p>
+                    <input type="number" class="input__number" id="verbrauch__apfel__pro__tag">
+                    <p> Tage bis Lieferung : </p>
+                    <input type="number" class="input__number" id="tage__apfel">
+                    <p> Du hast : </p>
+                    <input type="number" class="input__number" placeholder="Karton" id="lage__tuete">
+                    <p> Du braust : </p>
+                    <input class="berechnen__button" type="button" value="berechnen" onclick="berechnenApfel ()">
+                    <p>--></p>
+                    <input type="number" class="input__number" id="brauche__apfel">
+                    <p>Kartons</p>
+                </div>
+            </div>
+            <div class="produkt__frisch">
+                <div class="wrin__nummer"><span class="produkt__text">Zwiebeln frisch weiss 3x200gr - </span>
+                    #000028-177
+                </div>
+                <div class="quantity__and__more">
+                    <p> Verbrauch : </p>
+                    <input type="number" class="input__number" id="verbrauch__zwiebeln">
+                    <p> Datum : </p>
+                    <input type="number" class="input__number" id="verbrauch__zwiebeln__pro__tag">
+                    <p> Tage bis Lieferung : </p>
+                    <input type="number" class="input__number" id="tage__zwiebeln">
+                    <p> Du hast : </p>
+                    <input type="number" class="input__number" placeholder="Schlauche" id="lage__zwiebeln">
+                    <p> Du braust : </p>
+                    <input class="berechnen__button" type="button" value="berechnen" onclick="berechnenZwiebeln ()">
+                    <p>--></p>
+                    <input type="number" class="input__number" id="brauche__zwiebeln">
+                    <p>Schlauche</p>
+                </div>
+            </div>
+            <div class="produkt__frisch">
+                <div class="wrin__nummer"><span class="produkt__text">Tomaten Ganz - </span> #000253-168</div>
+                <div class="quantity__and__more">
+                    <p> Verbrauch : </p>
+                    <input type="number" class="input__number" id="verbrauch__tomaten">
+                    <p> Datum : </p>
+                    <input type="number" class="input__number" id="verbrauch__tomaten__pro__tag">
+                    <p> Tage bis Lieferung : </p>
+                    <input type="number" class="input__number" id="tage__tomaten">
+                    <p> Du hast : </p>
+                    <input type="number" class="input__number" placeholder="Kiste" id="lage__tomaten">
+                    <p> Du braust : </p>
+                    <input class="berechnen__button" type="button" value="berechnen" onclick="berechnenTomaten ()">
+                    <p>--></p>
+                    <input type="number" class="input__number" id="brauche__tomaten">
+                    <p>Kiste</p>
+                </div>
+            </div>
+            <div class="produkt__frisch">
+                <div class="wrin__nummer"><span class="produkt__text">Salat Lollo Bionda 300gr - </span> #011632-000
+                </div>
+                <div class="quantity__and__more">
+                    <p> Verbrauch : </p>
+                    <input type="number" class="input__number" id="verbrauch__lollo">
+                    <p> Datum : </p>
+                    <input type="number" class="input__number" id="verbrauch__lollo__pro__tag">
+                    <p> Tage bis Lieferung : </p>
+                    <input type="number" class="input__number" id="tage__lollo">
+                    <p> Du hast : </p>
+                    <input type="number" class="input__number" placeholder="Beutel" id="lage__lollo">
+                    <p> Du braust : </p>
+                    <input class="berechnen__button" type="button" value="berechnen" onclick="berechnenLollo ()">
+                    <p>--></p>
+                    <input type="number" class="input__number" id="brauche__lollo">
+                    <p>Beutel</p>
+                </div>
+            </div>
+            <div class="produkt__frisch">
+                <div class="wrin__nummer"><span class="produkt__text">Salat Eisberg Standard gross - </span> #000018-055
+                </div>
+                <div class="quantity__and__more">
+                    <p> Verbrauch : </p>
+                    <input type="number" class="input__number" id="verbrauch__eisberg">
+                    <p> Datum : </p>
+                    <input type="number" class="input__number" id="verbrauch__eisberg__pro__tag">
+                    <p> Tage bis Lieferung : </p>
+                    <input type="number" class="input__number" id="tage__eisberg">
+                    <p> Du hast : </p>
+                    <input type="number" class="input__number" placeholder="Kiste" id="lage__eisberg">
+                    <p> Du braust : </p>
+                    <input class="berechnen__button" type="button" value="berechnen" onclick="berechnenEisberg ()">
+                    <p>--></p>
+                    <input type="number" class="input__number" id="brauche__eisberg">
+                    <p>Kiste</p>
+                </div>
+            </div>
+            <div class="produkt__frisch">
+                <div class="wrin__nummer"><span class="produkt__text">Salat Mischsalat 700gr - </span> #000134-972</div>
+                <div class="quantity__and__more">
+                    <p> Verbrauch : </p>
+                    <input type="number" class="input__number" id="verbrauch__misch">
+                    <p> Datum : </p>
+                    <input type="number" class="input__number" id="verbrauch__misch__pro__tag">
+                    <p> Tage bis Lieferung : </p>
+                    <input type="number" class="input__number" id="tage__misch">
+                    <p> Du hast : </p>
+                    <input type="number" class="input__number" placeholder="Beutel" id="lage__misch">
+                    <p> Du braust : </p>
+                    <input class="berechnen__button" type="button" value="berechnen" onclick="berechnenMisch ()">
+                    <p>--></p>
+                    <input type="number" class="input__number" id="brauche__misch">
+                    <p>Beutel</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Salat Bestellung Mobile-->
+
+    <section class="salat__bestellung__mobile">
+        <a class="eier__mobile" href="eier.html">Eier pasteurusiert</a>
+        <a class="apfel__mobile" href="apfeltuete.html">Apfeltüte</a>
+        <a class="zwiebeln__mobile" href="zwiebeln.html">Zwiebeln</a>
+        <a class="tomaten__mobile" href="tomaten.html">Tomaten</a>
+        <a class="salat__lollo__mobile" href="lollobionda.html">Lollo Bionda</a>
+        <a class="salat__eisberg__mobile" href="eisberg.html">Eisberg Salat</a>
+        <a class="salat__misch__mobile" href="mischsalat.html">Misch Salat</a>
+    </section>
+
+    <!-- Footer -->
+
+    <article class="footer">
+        <div class="footer__final">
+            <p>Plamen Petrov<span>&#169; </span>2022. All right reserved</p>
+        </div>
+    </article>
+</body>

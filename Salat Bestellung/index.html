@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salat Bestellung</title>
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Favicons -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#f70505">
+    <link rel="shortcut icon" href="./img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#f70505">
+    <meta name="msapplication-config" content="./img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#f70505">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="input.js"></script>
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header class="header">
+        <h1 class="logo">Welcome<span id="name"></span></h1>
+        <div class="menu">
+            <a href="https://www.haviconnect.com/login">HAVI Homepage</a>
+            <a type="button" onclick="feedbackGeben ()" href="#">Feedback</a>
+            <a href="#">Impressum</a>
+        </div>
+    </header>
+
+    <!-- LogIn -->
+    <main class="first__page">
+        <section class="wrapper">
+            <div class="log__in">
+                <form action="lieferung.html" method="post">
+                    <div class="txt__field">
+                        <input type="text" required name="" id="username">
+                        <span></span>
+                        <label class="username__header">Username</label>
+                    </div>
+                    <div class="txt__field">
+                        <input type="password" required name="" id="password">
+                        <span></span>
+                        <label class="username__header">Password</label>
+                    </div>
+                    <div class="pass">Password Vergessen?</div>
+                    <input type="submit" id="txt__txt" value="Login" onclick="validate()">
+                    <div class="signup__link">
+                        Kein Account?<a href="#"> Signup</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+
+    <article class="footer">
+        <div class="footer__final">
+            <p>Plamen Petrov<span>&#169; </span>2022. All right reserved</p>
+        </div>
+    </article>
+
+</body>
+
+</html>
